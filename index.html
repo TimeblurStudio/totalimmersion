@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Forwarding site...</title>
+  </head>
+  <body>
+    <script>
+    
+      let current_ = window.location.href;
+      if(current_.contains('github.io')){
+        window.location.href=current_.replace('timeblurstudio.github.io/totalimmersion','app.osmoscape.com');
+      }else{
+        window.location.href=current_.replace('totalimmersion.co.in','app.osmoscape.com');
+      }
+    </script>
+  </body>
+</html>
