@@ -7,10 +7,16 @@
     <script>
     
       let current_ = window.location.href;
-      if(current_.contains('github.io')){
-        window.location.href=current_.replace('timeblurstudio.github.io/totalimmersion','app.osmoscape.com');
+      if(current_.includes('github.io')){
+        console.log('Redirecting from github site...');
+        let new_link = current_.replace('timeblurstudio.github.io/totalimmersion','app.osmoscape.com');
+        console.log(new_link);
+        window.location.href=new_link;
       }else{
-        window.location.href=current_.replace('totalimmersion.co.in','app.osmoscape.com');
+        console.log('Redirecting from total immersion ...');
+        let new_link = current_.replace('totalimmersion.co.in','app.osmoscape.com');
+        console.log(new_link);
+        window.location.href=new_link;
       }
     </script>
   </body>
